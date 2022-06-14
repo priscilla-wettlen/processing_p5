@@ -1,4 +1,5 @@
 let dia = 100;
+let spray = 50;
 function setup() {
   createCanvas(800, 800);
   background(137,255,160);
@@ -9,12 +10,12 @@ function draw() {
 }
 function mouseDragged(){
   fill(255,2,92);
-  noStroke();
-  //circle(mouseX, mouseY, mouseX-pmouseX); 
-  circle(mouseX, mouseY, dia);
-  circle(width-mouseX, mouseY, dia);
-  circle(mouseX, height-mouseY, dia);
-  circle(width-mouseX, height-mouseY, dia);
+  stroke(2);
+  circle(mouseX, mouseY, mouseX-pmouseX); 
+  //circle(mouseX, mouseY, dia);
+  // circle(width-mouseX, mouseY, dia);
+  //circle(mouseX, height-mouseY, dia);
+  //circle(width-mouseX, height-mouseY, dia);
   
 }
 function keyPressed(){
